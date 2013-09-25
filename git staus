@@ -1,0 +1,78 @@
+[1mdiff --git a/git.docx b/git.docx[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d5a2dc8[m
+[1m--- /dev/null[m
+[1m+++ b/git.docx[m
+[36m@@ -0,0 +1,72 @@[m
+[32m+[m[32mContribuições da Ferramenta GIT como Sistema de Controle de Versão Distribuído para o Desenvolvimento Descentralizado e Concorrente[m
+[32m+[m[32mOlavo Vitor Ferreira Sobrinho1[m
+[32m+[m[32mAutor Segundo deste Artigo 2[m
+[32m+[m[32mAutor Segundo deste Artigo 3[m
+[32m+[m[32mAutor Segundo deste Artigo 4[m
+[32m+[m
+[32m+[m
+[32m+[m[32m1Centro de Informática (CIn)  -  Universidade Federal de Pernambuco (UFPE)[m[41m [m
+[32m+[m[32mCaixa Postal 7851  -  50.740-560  -  Recife  -  PE  -  Brasil[m[41m [m
+[32m+[m[32movfs@cin.ufpe.br[m
+[32m+[m
+[32m+[m[32m2IPCP  -  Instituto de Pesquisas Computacionais de São Paulo[m
+[32m+[m[32mCx. Postal 888- CEP 88.888-888 Município (UF)[m
+[32m+[m[32msegundo@maquinax.server.br[m
+[32m+[m
+[32m+[m
+[32m+[m[32mResumo: O contínuo crescimento da engenharia de software, para suprir necessidades atuais, remete a projetos com desenvolvimento paralelo e descentralizado, que requerem mecanismos e meios para auxiliar a concorrência e colaboração na manutenção de itens de configuração. Para tanto, existem os sistemas de controle de versão (SCV) e Sistemas de Gerenciamento de Mudanças (SGM), centralizados e distribuídos, cujas características serão abordadas e comparadas nesse artigo, tomando como base a ferramenta GIT, a fim de esclarecer as vantagens de seu uso ante outras ferramentas.[m
+[32m+[m[32mPalavras Chaves: SVC, SGM, concorrência e colaboração, centralizados e distribuídos, GIT.[m
+[32m+[m
+[32m+[m
+[32m+[m[32mIntrodução[m
+[32m+[m[32mA engenharia de software, apesar de apresentar um amadurecimento ao longo dos últimos anos, ainda tem muito que evoluir, sobretudo se comparada à engenharia civil, por exemplo, onde artefatos são mais sólidos e menos variáveis. Se levarmos em consideração os números publicados pelo periódico The Caos Report[m
+[32m+[m[32mBoa parte desses problemas é advinda da falta ou ineficiência de mecanismos de apoio ou gestão no desenvolvimento software, seja para casos onde há equipes descentralizadas e/ou produção paralela. Assim problemas como falta de comunicação e concorrência podem ocasionar, entre outros, retrabalho e atrasos, sob pena primária de insatisfação do cliente.[m
+[32m+[m[32mEsses tais mecanismos de apoio podem ser sistemas de controle de versão e sistemas de gerenciamento de mudanças, muito comuns num ambiente de desenvolvimento de software minimamente maduro.[m
+[32m+[m[32mPrimeira página[m
+[32m+[m[32mA primeira página deve conter, na seguinte sequência:[m
+[32m+[m[32mTítulo do artigo em fonte Helvetica ou Arial, tamanho 14 pontos em negrito. Espaçamento antes de 12 pontos e depois de 24 pontos. Espaçamento simples entre as linhas;[m
+[32m+[m[32mNome dos autores em fonte Times ou Times New Roman, tamanho 10 pontos em caixa alta, centralizado, espaço após de 3 pontos;[m
+[32m+[m[32mEndereço dos autores, em fonte Times ou Times New Roman, tamanho 10, centralizado, espaço após de 3 pontos;[m
+[32m+[m[32mResumo do artigo em fonte Times ou Times New Roman, tamanho 10, com recuo de 1cm à esquerda e à direita, espaço após de 3 pontos;[m
+[32m+[m[32mPalavras chaves do artigo, com formatação idêntica ao Resumo.[m
+[32m+[m[32mSeções[m
+[32m+[m[32mTítulo de seções e subseções devem estar em fonte Arial ou Helvética,, tamanho 10 pontos, em negrito. Deve haver um espaço adicional de 9 pontos antes do parágrafo de título e 3 após. As seções e subseções devem ser numeradas no formato:[m
+[32m+[m[32m1 Título da Seção 1[m
+[32m+[m[32m1.1 Título da Subseção 1.1[m
+[32m+[m[32m1.2 Título da Subseção 1.2[m
+[32m+[m[32m2 Título da Seção 2[m
+[32m+[m[32m2.1 Título da Seção 2.1[m
+[32m+[m[32mO primeiro parágrafo de cada seção não deve estar indentado. Os demais parágrafos devem estar indentados em 0,5cm. O texto do artigo deve estar em duas colunas separadas por 0,5cm.[m
+[32m+[m[32m  + Figuras e tabelas[m
+[32m+[m[32mCaso seja necessário, figuras e tabelas podem ultrapassar os limites das colunas (mas não os das margens). O título de uma dada figura (ver Figura 1) deve vir abaixo da mesma e centralizado.[m[41m [m
+[32m+[m
+[32m+[m[32mFigura 1: Uma figura qualquer[m
+[32m+[m[32mAntes de cada figura deve haver um espaço de 6 pontos. Entre a figura e a legenda, um espaço de 3 pontos. Após a legenda deve haver um espaço de 6 pontos. A legenda deve estar em Times ou Times New Roman, tamanho 9 pontos.[m[41m [m
+[32m+[m[32mO título de tabelas deve aparecer centralizado e  abaixo das mesmas (ver Tabela 1).[m[41m [m
+[32m+[m
+[32m+[m[32mUsuário[m
+[32m+[m[32mConta[m
+[32m+[m[32mSaldo[m
+[32m+[m[32mJosé[m
+[32m+[m[32m1227-8[m
+[32m+[m[32m45,23[m
+[32m+[m[32mDelmo[m
+[32m+[m[32m3224-9[m
+[32m+[m[32m23,02[m
+[32m+[m[32mTabela 1: Exemplo simples de tabela[m
+[32m+[m[32m* Usando Referências[m
+[32m+[m[32mO formato preferido para as referências é a colocação entre colchetes do sobrenome seguido do ano da publicação da referência, exemplos:[m[41m [m
+[32m+[m[32m"... o que se pode esperar dos sistemas aviônicos distribuídos [Resende(1999)] ..."[m
+[32m+[m[32m"... o que se pode esperar dos sistemas aviônicos distribuídos [Resende et al (1999)] ..."[m
+[32m+[m[32m"... o que se pode esperar dos sistemas aviônicos distribuídos [Resende99] ..."[m[41m [m
+[32m+[m[32mCaso necessite referenciar artigos distintos produzido(s) pelo(s) mesmo(s) autor(es) no mesmo ano, deve-se colocar letras do alfabeto após a data formatadas como sobrescrito, exemplo: "... dos agentes aviônicos inteligentes [Resende99a] e distribuídos pelos 16 computadores de bordo, 75% possuiam uma base de conhecimento auto alimentada e auto gerada, utilizando-se do protocolo KQML [Resende99b] e KIF [Resende99c]. Os agentes..."[m[41m [m
+[32m+[m[32m Pode-se também utilizar referências numéricas, exemplo: "... dos agentes aviônicos inteligentes [01] e distribuídos pelos 16 computadores de bordo, 75%          possuíam uma base de conhecimento auto alimentada e auto gerada, utilizando-se do protocolo KQML [14] e KIF [07]. Os agentes..."[m[41m [m
+[32m+[m[32mEstes são os formatos de referências recomendados e os mais utilizados, entretanto não são obrigatórios.[m
+[32m+[m[32m* Referências[m
+[32m+[m[32mIncerti, S. & Zirilli, F. "A new method for solving equations". J. Numerical Analysis, (16):779-789, 1979.[m
+[32m+[m[32mKnuth, D. E. The TeXbook, Addison Wesley, 1984.[m[41m [m
+[32m+[m[32mSederberd, T. & Zundel, K. "An invented  bibliographic reference". J. Anthological Computing, (23):7-13, 1989a.[m
+[32m+[m[32mSederberd, T. & Zundel, K. "Another invented  bibliographic reference". J. Anthological Computing (23):14-29, 1989b.[m
+[32m+[m[32mSederberd, T. & Zundel, K. "More invented  bibliographic references". J. Iterated Fiction (16):79-88, 1990.[m
+[32m+[m
+[32m+[m
